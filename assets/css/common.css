@@ -1,0 +1,640 @@
+@charset 'UTF-8';
+
+/* ===============================================
+Base
+=============================================== */
+
+/*
+  Reset
+----------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ vertical-align: baseline;
+ font: inherit;
+ font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+ display: block;
+}
+
+body {
+ line-height: 1;
+}
+
+ol,
+ul {
+ list-style: none;
+}
+
+blockquote,
+q {
+ quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+ content: '';
+ content: none;
+}
+
+table {
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+
+
+/*
+  Default style
+----------------------------------------------- */
+
+
+body {
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+ color: #212121;
+ font-family: 'Noto Sans JP', sans-serif;
+ line-height: 2;
+}
+
+img {
+ vertical-align: bottom;
+}
+
+*,
+*:before,
+*:after {
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+:lang(en) {
+ text-transform: uppercase;
+}
+
+/* ===============================================
+Layout
+=============================================== */
+
+/*
+  Centering
+----------------------------------------------- */
+
+.header-inner,
+.footer-inner {
+ margin: 0 auto;
+ width: 1200px;
+}
+
+/* .hero-inner {
+ margin: 0 auto;
+ width: 1280px;
+} */
+
+.container {
+ margin: 0 auto;
+ width: 792px;
+}
+
+
+/*
+  Header
+----------------------------------------------- */
+
+#header {
+ overflow: hidden;
+ margin-bottom: 2em;
+}
+
+.header-logo a {
+ display: block;
+ float: left;
+ padding: 1.5em 0;
+}
+
+.header-nav {
+ float: right;
+ overflow: hidden;
+}
+
+.header-nav ul li {
+ float: left;
+ padding-left: 48px;
+}
+
+.header-nav ul li:last-child {
+ float: left;
+ padding-left: 24px;
+}
+
+.header-nav ul li a {
+ display: block;
+ border-bottom: 4px solid transparent;
+ color: #212121;
+ text-decoration: none;
+ letter-spacing: .1em;
+ font-weight: bold;
+ line-height: 5em;
+}
+
+.header-nav ul li a:hover {
+ border-bottom: 4px solid #212121;
+}
+
+.header-nav ul li span a {
+ display: block;
+ width: 130px;
+ background-color: #000;
+ color: #fff;
+ text-align: center;
+}
+
+.header-nav ul li span a:hover {
+ opacity: .5;
+}
+
+
+/*
+  Main
+----------------------------------------------- */
+
+#main {
+ clear: both;
+}
+
+.section {
+ margin-bottom: 5em;
+}
+
+.profile {
+ clear: both;
+}
+
+
+/*
+  Footer
+----------------------------------------------- */
+#footer {
+ margin-top: 5em;
+ background-color: #212121;
+ color: #bdbdbd;
+ font-size: .75em;
+}
+
+.breadcrumbs {
+ overflow: hidden;
+ padding: 2.5em 0;
+ letter-spacing: .2em;
+ font-weight: bold;
+ font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumbs li {
+ float: left;
+}
+
+.breadcrumbs li:after {
+ padding: 0 1em;
+ content: '>';
+}
+
+.breadcrumbs li:last-child:after {
+ content: '';
+}
+
+.breadcrumbs a {
+ color: #bdbdbd;
+ text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+ color: #212121;
+}
+
+.footer-nav {
+ clear: both;
+ padding: 2.5em 0 4.5em 0;
+ border-top: 1px solid #bdbdbd;
+ color: #bdbdbd;
+ text-decoration: none;
+ letter-spacing: .2em;
+ font-weight: bold;
+ font-family: 'Roboto', sans-serif;
+}
+
+.footer-nav a {
+ color: #bdbdbd;
+ text-decoration: none;
+}
+
+.footer-nav li {
+ float: left;
+ padding-right: 2.5em;
+}
+
+.footer-nav a:hover {
+ color: #212121;
+}
+
+.footer-bottom {
+ clear: both;
+ overflow: hidden;
+ padding: 2.5em 0;
+ border-top: 1px solid #bdbdbd;
+}
+
+.footer-bottom a {
+ color: #bdbdbd;
+ text-decoration: none;
+}
+
+.footer-bottom-wrap {
+ float: left;
+ overflow: hidden;
+}
+
+.footer-logo {
+ float: left;
+ margin-right: 2.5em;
+}
+
+.footer-address {
+ float: left;
+}
+
+.footer-copyright {
+ float: right;
+}
+
+
+/* ===============================================
+Object
+=============================================== */
+
+/*
+  Hero
+----------------------------------------------- */
+.page-title span {
+ text-align: center;
+ letter-spacing: .2em;
+ font-weight: bold;
+ font-size: 2em;
+ font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+ text-align: center;
+ letter-spacing: .18em;
+ font-weight: bold;
+ font-size: 1em;
+}
+
+.hero {
+ width: 100%;
+ min-width: 1200px;
+ margin: 3em 0 5em;
+
+}
+
+
+/*
+  Contents
+----------------------------------------------- */
+
+.heading-primary {
+ margin-bottom: 40px;
+ letter-spacing: .1em;
+ font-weight: bold;
+ font-size: 2.5em;
+ line-height: 1.5;
+}
+
+.heading-primary span {
+ display: inline-block;
+ margin-bottom: 24px;
+ padding-bottom: 19px;
+ border-bottom: 4px solid #212121;
+ letter-spacing: .2em;
+ font-size: .75rem;
+ font-family: 'Roboto', sans-serif;
+}
+
+.mission-text p,
+.message-left p {
+ margin: 2em 0;
+}
+
+.mission-text p:last-child {
+ margin-bottom: 80px;
+}
+
+.message-title,
+.profile-title {
+ text-align: center;
+}
+
+.message-wrap {
+ overflow: hidden;
+}
+
+.heading-secondary {
+ font-weight: bold;
+ font-size: 2em;
+ line-height: 1.5;
+}
+
+.message-left {
+ float: left;
+ width: 392px;
+}
+
+.message-right {
+ position: relative;
+ float: right;
+ width: 364px;
+}
+
+.message-card {
+ position: relative;
+ position: absolute;
+ right: 0;
+ bottom: -6em;
+ left: 0;
+ margin: 0 auto;
+ padding: 1.5em 1em;
+ width: 336px;
+ border: 4px solid #212121;
+ background-color: #fff;
+}
+
+.message-tag {
+ position: absolute;
+ top: -20px;
+ left: 1em;
+ padding: .25em;
+ width: 77px;
+ background-color: #212121;
+ color: #fff;
+ text-align: center;
+ letter-spacing: .2em;
+ font-size: .75em;
+ font-family: 'Roboto', sans-serif;
+}
+
+.message-card-text {
+ font-size: .75em;
+ line-height: 1.5;
+}
+
+.name-mitagawa {
+ padding: .25em 0;
+ font-weight: bold;
+ font-size: 1.25rem;
+}
+
+.profile dl {
+ overflow: hidden;
+ width: 792px;
+}
+
+.profile dt {
+ display: block;
+ float: left;
+ padding: .75em 0;
+ width: 200px;
+ font-weight: bold;
+}
+
+.profile dt:last-child {
+ border: none;
+}
+
+.profile dd {
+ padding: .75em 0;
+ width: 792px;
+ border-bottom: 1px solid #ddd;
+}
+
+.profile ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+
+
+/*
+  Button
+----------------------------------------------- */
+
+.button-primary {
+ position: relative;
+ display: block;
+ margin: 0 auto;
+ padding: 1em;
+ width: 384px;
+ border: 2px solid #212121;
+ border-radius: 1.5em;
+ color: #212121;
+ text-align: center;
+ text-decoration: none;
+ font-weight: bold;
+ letter-spacing: .2em;
+}
+
+.button-primary:before,
+.button-primary:after {
+ position: absolute;
+ top: 50%;
+ display: block;
+ margin-top: -.5em;
+ width: 12px;
+ height: 12px;
+ color: #212121;
+ content: '';
+ -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+}
+
+.button-primary:before {
+ right: 40px;
+ background-color: #212121;
+}
+
+.button-primary:after {
+ right: 44px;
+ background-color: #fff;
+}
+
+.button-primary:hover:before {
+ background-color: #fff;
+}
+
+.button-pagetop {
+ position: relative;
+ display: block;
+ color: #212121;
+ text-align: center;
+ text-decoration: none;
+ letter-spacing: .2em;
+ font-size: .75em;
+ font-family: 'Roboto', sans-serif;
+}
+
+.button-pagetop:before,
+.button-pagetop:after {
+ position: absolute;
+ right: 0;
+ left: 0;
+ display: block;
+ margin: 0 auto;
+ width: 12px;
+ height: 12px;
+ color: #212121;
+ content: '';
+ -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+}
+
+.button-pagetop:before {
+ top: -14px;
+ background-color: #212121;
+}
+
+.button-pagetop:after {
+ top: -10px;
+ background-color: #fff;
+}
+
+.button-pagetop:hover:before {
+ background-color: #fff;
+}
+
+/*
+  Item
+----------------------------------------------- */
+
+.line {
+  position: relative;
+  padding-bottom: 10em;
+}
+
+.line:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #212121;
+}
+
+
+
+/*
+  Accessibility
+----------------------------------------------- */
+.screen-reader-text {
+ position: absolute;
+ overflow: hidden;
+ clip: rect(1px, 1px, 1px, 1px);
+ width: 1px;
+ height: 1px;
+}
